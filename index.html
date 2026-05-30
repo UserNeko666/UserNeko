@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER NEKO - Portal Utama</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <header class="main-header glass-effect">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fa-solid fa-cat logo-icon"></i>
+                <span>USER NEKO</span>
+            </div>
+            <div class="header-actions">
+                <button id="theme-toggle" class="action-btn circle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div id="auth-buttons" class="auth-buttons">
+                    <button id="btn-login-modal" class="action-btn outline-btn">
+                        <i class="fa-brands fa-google"></i> Login
+                    </button>
+                    <button id="btn-signup-modal" class="action-btn solid-btn">
+                        <i class="fa-brands fa-google"></i> Sign Up
+                    </button>
+                </div>
+                <div id="user-profile" class="user-profile hidden">
+                    <span id="user-display-name" class="user-name"></span>
+                    <button id="btn-logout" class="action-btn logout-btn">
+                        <i class="fa-solid fa-right-from-bracket"></i> Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        
+        <section id="page-home" class="page-section active-page fade-in">
+            <div class="hero-banner">
+                <img src="https://www.image2url.com/r2/default/images/1779948800855-1c9f0c56-b071-4500-9b99-3bf1aab34292.png" alt="User Neko Banner" id="main-banner">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="welcome-container text-center">
+                <h1 class="glow-text">Selamat Datang di USER NEKO</h1>
+                <p class="section-desc">Website ini adalah portal utama untuk mengakses layanan shop, informasi server, dan fitur komunitas lainnya.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon"><i class="fa-solid fa-basket-shopping"></i></div>
+                    <h3>Premium Shop</h3>
+                    <p>Dapatkan akses instan ke item terbaik di Shop Rank dan kreasi visual menakjubkan di Shop Art.</p>
+                </div>
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Minecraft Server</h3>
+                    <p>Bergabunglah dengan komunitas survival kami yang aktif, adil, dan dikelola secara profesional.</p>
+                </div>
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Sistem Terintegrasi</h3>
+                    <p>Satu akun untuk menjelajahi seluruh ekosistem layanan yang kami sediakan dengan aman.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-shop" class="page-section hidden fade-in">
+            <div class="section-header text-center">
+                <h2 class="glow-text">Neko Marketplace</h2>
+                <p class="section-desc">Pilih layanan shop eksklusif yang ingin Anda tuju</p>
+            </div>
+            
+            <div class="shop-grid">
+                <div class="shop-card glass-effect">
+                    <div class="card-image-wrapper">
+                        <img src="https://www.image2url.com/r2/default/images/1779951112611-459a78a2-b2e3-4b28-9f56-c987ca51debb.png" alt="Shop Rank">
+                    </div>
+                    <div class="card-body">
+                        <h3>Shop Rank</h3>
+                        <p>Tingkatkan kasta bermain Anda dengan rank eksklusif. Dapatkan hak istimewa, kosmetik unik, dan commands khusus di dalam server.</p>
+                        <a href="NekoStore/index.html" class="card-action-btn">Open Shop <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="shop-card glass-effect">
+                    <div class="card-image-wrapper">
+                        <img src="https://www.image2url.com/r2/default/images/1779969994114-83e9dbbb-79bd-4f1e-99fa-253e8b20eec5.png" alt="Shop Art">
+                    </div>
+                    <div class="card-body">
+                        <h3>Shop Art</h3>
+                        <p>Ekspresikan diri Anda melalui desain seni digital kustom, avatar gaming premium, dan ilustrasi buatan kreator profesional berbakat.</p>
+                        <a href="NekoStore/art.html" class="card-action-btn">Open Shop <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+                            <div class="shop-card glass-effect">
+                    <div class="card-image-wrapper">
+                        <img src="https://www.image2url.com/r2/default/images/1780033811439-d616dcbf-dce6-472c-b99c-714b775e990d.png" alt="Shop build">
+                    </div>
+                    <div class="card-body">
+                        <h3>Shop Build</h3>
+                        <p>Ekspresikan dunia Anda melalui desain building custom, arsitektur fantasy premium, dan konsep bangunan kreatif hasil karya builder profesional berbakat.</p>
+                        <a href="NekoStore/build.html" class="card-action-btn">Open Shop <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-server" class="page-section hidden fade-in">
+            <div class="section-header text-center">
+                <h2 class="glow-text">Informasi Server</h2>
+                <p class="section-desc">Koneksi dan detail teknis server Minecraft resmi kami</p>
+            </div>
+
+            <div class="server-info-card glass-effect">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-signature"></i> Nama Server</span>
+                        <span class="info-value">Unknown</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-network-wired"></i> IP Server</span>
+                        <span class="info-value" id="ip-text">Unknown</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-door-open"></i> Port Server</span>
+                        <span class="info-value">Unknown</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-code-branch"></i> Versi Server</span>
+                        <span class="info-value">Bedrock/MCPE 1.26.x</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="server-details-grid">
+                <div class="detail-card glass-effect">
+                    <div class="detail-title">
+                        <i class="fa-solid fa-gavel"></i>
+                        <h3>Rules & Peraturan</h3>
+                    </div>
+                    <ul class="rules-list">
+                        <li>Dilarang keras menggunakan cheat, mod ilegal, atau X-Ray.</li>
+                        <li>Hormati sesama pemain; dilarang melakukan toxic, SARA, dan harassment.</li>
+                        <li>Griefing (merusak bangunan orang lain) tanpa izin berakibat ban permanen.</li>
+                        <li>Dilarang mengeksploitasi bug keuntungan sistem. Laporkan segera ke admin.</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card glass-effect">
+                    <div class="detail-title">
+                        <i class="fa-solid fa-fire"></i>
+                        <h3>Survival Gameplay</h3>
+                    </div>
+                    <p>Rasakan pengalaman bertahan hidup semi-vanilla yang imersif dengan sistem ekonomi berimbang. Nikmati fitur klaim wilayah (Land Claim) untuk melindungi aset Anda, klan (Towny), quest harian yang menantang, serta dungeon khusus monster berhadiah item legendaris.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav glass-effect">
+        <button class="nav-item" data-target="page-shop">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span>Shop</span>
+        </button>
+        <button class="nav-item active-nav" data-target="page-home">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </button>
+        <button class="nav-item" data-target="page-server">
+            <i class="fa-solid fa-compass"></i>
+            <span>Server</span>
+        </button>
+    </nav>
+
+    <div id="modal-login" class="modal-overlay">
+        <div class="modal-box glass-effect">
+            <button class="close-modal-btn">&times;</button>
+            <div class="modal-header">
+                <h2>Selamat Datang Kembali</h2>
+                <p>Silakan masuk menggunakan akun lokal Anda</p>
+            </div>
+            <form id="form-login" class="modal-form">
+                <div class="form-group">
+                    <label for="login-username">Username</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="login-username" placeholder="Masukkan username" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="login-password" placeholder="Masukkan password" required>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+                
+                  <div class="switch-auth">
+                   <span>Belum punya akun?</span>
+                     <button type="button" id="go-signup-btn" class="switch-btn">Buat Akun</button>
+</div>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal-signup" class="modal-overlay">
+        <div class="modal-box glass-effect">
+            <button class="close-modal-btn">&times;</button>
+            <div class="modal-header">
+                <h2>Buat Akun Baru</h2>
+                <p>Daftarkan akun Anda untuk mengakses fitur penuh</p>
+            </div>
+            <form id="form-signup" class="modal-form">
+                <div class="form-group">
+                    <label for="signup-username">Username</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="signup-username" placeholder="Buat username unik" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="signup-email" placeholder="contoh@domain.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="signup-password" placeholder="Minimal 6 karakter" required>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Daftar Akun</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
