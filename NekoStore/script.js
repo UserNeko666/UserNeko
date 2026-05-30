@@ -1,5 +1,5 @@
 
-const nomorWA = "62895320699792";
+const nomorWA = "";
 
 const dataRank = [
   {
