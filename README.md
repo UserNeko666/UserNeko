@@ -66,34 +66,6 @@ Project ini dibangun menggunakan:
 - Local Storage
 - Font Awesome
 
-📂 Struktur Project
-
-USER-NEKO/
-│
-├── index.html
-├── style.css
-├── script.js
-│
-├── Neko-Shop/
-│   └── index.html
-│
-├── Art/
-│   └── index.html
-│
-└── assets/
-    ├── images/
-    └── icons/
-
-🚀 Cara Menjalankan
-
-1. Download atau clone repository.
-2. Buka folder project.
-3. Jalankan file "index.html" menggunakan browser.
-4. Atau deploy menggunakan:
-   - Vercel
-   - Netlify
-   - GitHub Pages
-
 🌐 Website
 
 Website Beta:
@@ -113,11 +85,8 @@ Beberapa fitur masih dalam proses pengembangan dan akan terus diperbarui secara 
 - [x] Portal Server
 - [x] Dark & Light Mode
 - [x] Login & Sign Up
-- [ ] Google Login
-- [ ] GitHub Login
-- [ ] NekoAI Assistant
-- [ ] Sistem Pembayaran
-- [ ] Dashboard Pengguna
+- [x] GitHub Login
+- [x] Sistem Pembayaran
 - [ ] Notifikasi Real-time
 
 ❤️ Dukungan
